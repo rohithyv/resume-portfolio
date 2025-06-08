@@ -14,6 +14,7 @@
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
+    #typed { white-space: pre; display: inline-block; min-height: 3rem; }
   </style>
 </head>
 <body class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white min-h-screen">
@@ -33,9 +34,11 @@
   </header>
 
   <!-- Hero -->
-  <section class="h-screen flex items-center justify-center text-center px-6" id="hero">
+  <section class="h-screen flex items-center justify-center text-center px-6 pt-16" id="hero">
     <div data-aos="fade-up">
-      <h2 class="text-5xl font-bold mb-4"><span id="typed"></span></h2>
+      <h2 class="text-5xl font-bold mb-4">
+        <span id="typed">Hi, I'm Rohith</span>
+      </h2>
       <p class="text-lg mb-6">Software Engineer • AWS Certified • Full Stack Developer</p>
       <div class="flex justify-center space-x-6 text-xl">
         <a href="https://linkedin.com/in/rohith-yv" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -45,13 +48,13 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="py-20 px-6 max-w-4xl mx-auto" data-aos="fade-up">
     <h2 class="text-4xl font-bold mb-6">About Me</h2>
-    <p class="text-white text-lg">I'm a graduate student in Computer Science at George Washington University, passionate about building full-stack web applications and cloud-native systems. I’ve worked with teams at Sony and HPE to deliver scalable and responsive user experiences using technologies like React, AWS, and serverless architecture.</p>
+    <p class="text-lg">I'm a graduate student in Computer Science at George Washington University with a passion for full-stack development and cloud-native applications. I bring hands-on experience from Sony and HPE building scalable, responsive platforms.</p>
   </section>
 
-  <!-- Experience -->
+  <!-- Experience Section -->
   <section id="experience" class="bg-white text-black py-20 px-6" data-aos="fade-up">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold mb-10 text-center">Experience</h2>
@@ -60,36 +63,37 @@
           <h3 class="text-xl font-bold">Software Engineer – Sony PlayStation</h3>
           <p class="text-sm text-gray-600">Sep 2021 – Oct 2022</p>
           <ul class="mt-2 list-disc list-inside text-gray-700">
-            <li>Built 50+ React components for PlayStation Stars with AWS Lambda backend.</li>
-            <li>Boosted campaign engagement by 25% using serverless workflows.</li>
+            <li>Built 50+ React components for PlayStation Stars UI</li>
+            <li>Improved campaign conversions by 25% via AWS Lambda pipelines</li>
           </ul>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-bold">Software Developer Intern – HPE</h3>
           <p class="text-sm text-gray-600">Feb 2021 – Aug 2021</p>
           <ul class="mt-2 list-disc list-inside text-gray-700">
-            <li>Developed Azure-integrated APIs and inventory dashboards for MSP Workbench.</li>
-            <li>Enhanced reporting workflows and test coverage by 20%.</li>
+            <li>Developed internal tools and Azure APIs</li>
+            <li>Enhanced dynamic search and test coverage by 20%</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="py-20 px-6 max-w-6xl mx-auto" data-aos="fade-up">
     <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="bg-white text-black p-6 rounded-lg shadow-lg">
         <h3 class="text-xl font-semibold mb-2">WeatherNow</h3>
-        <p class="mb-2">Weather app using OpenWeatherMap & Pexels APIs.</p>
-        <a href="https://weathernow-rohithyv.vercel.app" class="text-indigo-600 hover:underline" target="_blank">Live Site</a> |
-        <a href="https://github.com/rohithyv/WeatherNow" class="text-indigo-600 hover:underline" target="_blank">GitHub</a>
+        <p class="mb-2">Live weather app using OpenWeatherMap and Pexels API.</p>
+        <a href="https://weathernow-rohithyv.vercel.app" target="_blank" class="text-indigo-600 hover:underline">Live Demo</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/rohithyv/WeatherNow" target="_blank" class="text-indigo-600 hover:underline">GitHub</a>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills" class="bg-white text-black py-20 px-6" data-aos="fade-up">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold mb-6 text-center">Skills</h2>
@@ -101,7 +105,7 @@
     </div>
   </section>
 
-  <!-- Certifications -->
+  <!-- Certifications Section -->
   <section id="certifications" class="py-20 px-6 max-w-4xl mx-auto" data-aos="fade-up">
     <h2 class="text-4xl font-bold mb-6">Certifications</h2>
     <ul class="list-disc list-inside text-white text-lg">
@@ -117,15 +121,17 @@
     &copy; 2025 Rohith Yellambalase Vijayakumar | All rights reserved.
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-    new Typed("#typed", {
-      strings: ["Hi, I'm Rohith Yellambalase Vijayakumar", "Software Engineer", "Cloud Developer", "Full Stack Builder"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      loop: true
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+      new Typed("#typed", {
+        strings: ["Hi, I'm Rohith Yellambalase Vijayakumar", "Software Engineer", "Cloud Developer", "Full Stack Builder"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+      });
     });
   </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
