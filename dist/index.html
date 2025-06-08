@@ -48,7 +48,6 @@
   </style>
 </head>
 <body>
-
   <!-- Apple-style Hero Section -->
   <section class="section parallax text-center pt-24">
     <div class="fade-in glass">
@@ -62,11 +61,98 @@
     </div>
   </section>
 
-  <!-- Rest of site remains unchanged -->
-  <!-- About, Experience, Projects, Skills, Certifications, Footer -->
-  <!-- ... -->
+  <!-- About Section -->
+  <section id="about" class="section bg-black text-center">
+    <div class="fade-in glass max-w-3xl">
+      <h2 class="text-4xl font-bold mb-4">About Me</h2>
+      <p class="text-lg text-gray-300">I’m a Master’s student in Computer Science at George Washington University, previously at Sony and HPE. I love building clean UIs, fast APIs, and launching scalable cloud applications.</p>
+    </div>
+  </section>
 
-  <!-- FontAwesome CDN -->
+  <!-- Experience Section -->
+  <section id="experience" class="section bg-gray-900 text-center">
+    <div class="fade-in glass max-w-5xl">
+      <h2 class="text-4xl font-bold mb-10">Experience</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold">Software Engineer – Sony PlayStation</h3>
+          <p class="text-sm text-gray-400">Sep 2021 – Oct 2022</p>
+          <ul class="list-disc list-inside mt-2 text-gray-300 text-left">
+            <li>Architected and optimized 30+ reusable React components for the PlayStation Stars platform, improving performance by 25% across campaigns</li>
+            <li>Orchestrated cloud-native workflows using AWS Lambda and S3 for automated campaign triggers, enhancing deployment speed by 40%</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Software Developer Intern – HPE</h3>
+          <p class="text-sm text-gray-400">Feb 2021 – Aug 2021</p>
+          <ul class="list-disc list-inside mt-2 text-gray-300 text-left">
+            <li>Designed and integrated REST APIs using Azure for internal inventory systems, reducing latency by 30%</li>
+            <li>Developed dynamic UI tools with React for order management, leading to 20% faster workflows for warehouse teams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-black text-center">
+    <div class="fade-in glass max-w-5xl">
+      <h2 class="text-4xl font-bold mb-10">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow">
+          <img src="https://raw.githubusercontent.com/rohithyv/WeatherNow/main/preview.png" alt="WeatherNow" class="mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">WeatherNow</h3>
+          <p class="text-gray-300 mb-2">Live weather app using OpenWeatherMap API & Pexels API</p>
+          <a href="https://weathernow-rohithyv.vercel.app" class="text-indigo-400 hover:underline" target="_blank">Live Site</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/rohithyv/WeatherNow" class="text-indigo-400 hover:underline" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-gray-900 text-center">
+    <div class="fade-in glass max-w-4xl">
+      <h2 class="text-4xl font-bold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-gray-300">
+        <div>
+          <p class="font-semibold">Languages</p>
+          <p>JavaScript, Python, Java</p>
+        </div>
+        <div>
+          <p class="font-semibold">Frameworks</p>
+          <p>React, Node.js, Express</p>
+        </div>
+        <div>
+          <p class="font-semibold">Cloud & Tools</p>
+          <p>AWS, Docker, Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section bg-black text-center">
+    <div class="fade-in glass max-w-3xl">
+      <h2 class="text-4xl font-bold mb-6">Certifications</h2>
+      <ul class="list-disc list-inside text-gray-300 text-left">
+        <li>AWS Academy Cloud Foundations</li>
+        <li>Red Hat OpenShift Developer I</li>
+        <li>Intro to Generative AI (Google)</li>
+        <li>Jenkins for DevOps – Coursera</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-500 bg-black">
+    &copy; 2025 Rohith Y V — Designed with precision &nbsp;
+    <a href="https://linkedin.com/in/rohith-yv" class="hover:text-gray-300" target="_blank"><i class="fab fa-linkedin"></i></a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/rohithyv" class="hover:text-gray-300" target="_blank"><i class="fab fa-github"></i></a>
+  </footer>
+
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
