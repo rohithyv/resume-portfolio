@@ -6,10 +6,27 @@
     <title>Rohith Y V | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .hover-grow {
+        transition: transform 0.3s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Header -->
-    <header class="bg-white shadow sticky top-0 z-50">
+    <header class="bg-white shadow sticky top-0 z-50 fade-in">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 class="text-2xl font-bold text-indigo-600">Rohith Y V</h1>
         <nav class="space-x-6">
@@ -23,30 +40,32 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-indigo-600 text-white py-20">
+    <section class="bg-indigo-600 text-white py-20 fade-in">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-2">Hi, I'm Rohith Yellambalase Vijayakumar</h2>
+        <h2 class="text-4xl font-bold mb-2">
+          <span id="typed"></span>
+        </h2>
         <p class="text-lg mb-6">Master's in CS @ GWU | Full Stack Dev | AWS | PlayStation & HPE Experience</p>
         <div class="flex justify-center space-x-6">
-          <a href="https://linkedin.com/in/rohith-yv" target="_blank" class="text-white text-xl"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/rohithyv" target="_blank" class="text-white text-xl"><i class="fab fa-github"></i></a>
-          <a href="mailto:rohithyvv@gwu.edu" class="text-white text-xl"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/rohith-yv" target="_blank" class="text-white text-xl hover:scale-125 transition-transform duration-300"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/rohithyv" target="_blank" class="text-white text-xl hover:scale-125 transition-transform duration-300"><i class="fab fa-github"></i></a>
+          <a href="mailto:rohithyvv@gwu.edu" class="text-white text-xl hover:scale-125 transition-transform duration-300"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="py-16 px-6 container mx-auto">
+    <section id="about" class="py-16 px-6 container mx-auto fade-in">
       <h2 class="text-3xl font-semibold mb-4">About Me</h2>
       <p class="text-lg">I'm a Computer Science graduate student at George Washington University with experience in full-stack development, AWS cloud services, and scalable software systems. Previously, I’ve worked on PlayStation Stars at Sony and enterprise tooling at HPE.</p>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="bg-gray-100 py-16 px-6">
+    <section id="experience" class="bg-gray-100 py-16 px-6 fade-in">
       <div class="container mx-auto">
         <h2 class="text-3xl font-semibold mb-8">Experience</h2>
         <div class="space-y-6">
-          <div>
+          <div class="hover-grow bg-white p-6 rounded-lg shadow">
             <h3 class="text-xl font-bold">Software Engineer – Sony PlayStation</h3>
             <p class="text-gray-700">Sep 2021 – Oct 2022</p>
             <ul class="list-disc list-inside text-gray-600 mt-2">
@@ -55,7 +74,7 @@
               <li>Utilized AWS Lambda and S3 for serverless campaign activation modules.</li>
             </ul>
           </div>
-          <div>
+          <div class="hover-grow bg-white p-6 rounded-lg shadow">
             <h3 class="text-xl font-bold">Software Developer Intern – HPE</h3>
             <p class="text-gray-700">Feb 2021 – Aug 2021</p>
             <ul class="list-disc list-inside text-gray-600 mt-2">
@@ -68,22 +87,21 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-16 px-6 container mx-auto">
+    <section id="projects" class="py-16 px-6 container mx-auto fade-in">
       <h2 class="text-3xl font-semibold mb-8">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="bg-white p-6 rounded-lg shadow hover-grow">
           <h3 class="text-xl font-bold">WeatherNow</h3>
           <p>A live weather app using OpenWeatherMap and Pexels API.</p>
           <a href="https://weathernow-rohithyv.vercel.app" target="_blank" class="text-indigo-600 hover:underline">Live Site</a>
           &nbsp;|&nbsp;
           <a href="https://github.com/rohithyv/WeatherNow" target="_blank" class="text-indigo-600 hover:underline">GitHub</a>
         </div>
-        <!-- Add more projects here -->
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="bg-gray-100 py-16 px-6">
+    <section id="skills" class="bg-gray-100 py-16 px-6 fade-in">
       <div class="container mx-auto">
         <h2 class="text-3xl font-semibold mb-6">Skills</h2>
         <p class="mb-4">Languages: JavaScript, Python, C++, Java</p>
@@ -93,7 +111,7 @@
     </section>
 
     <!-- Certifications -->
-    <section id="certifications" class="py-16 px-6 container mx-auto">
+    <section id="certifications" class="py-16 px-6 container mx-auto fade-in">
       <h2 class="text-3xl font-semibold mb-6">Certifications</h2>
       <ul class="list-disc list-inside text-gray-700">
         <li>AWS Academy Cloud Foundations</li>
@@ -104,8 +122,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-center py-4 text-sm text-gray-600">
+    <footer class="bg-white text-center py-4 text-sm text-gray-600 fade-in">
       &copy; 2025 Rohith Yellambalase Vijayakumar
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typed", {
+          strings: ["Hi, I'm Rohith Yellambalase Vijayakumar", "Software Engineer", "Cloud Developer", "Full Stack Builder"],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>
